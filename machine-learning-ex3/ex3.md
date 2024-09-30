@@ -84,7 +84,7 @@
 <center><img src="https://note.youdao.com/yws/api/personal/file/WEB1efa7d7beee3100f68265e8d1ae86c38?method=download&shareKey=7b40f5fc43a054c68fa61a510870fdfd" /></center>
 
 
-&#160;&#160;&#160;&#160;注意，当（`$h_{θ}(x^{(i)}) - y^{(i)}$`）是一个标量（单个数字）时，`$x^{(i)}$`是一个向量。为了最后一步求导，我们让`$β_i = (h_θ(x^{(i)}) - y^{(i)}$`并观察：
+&#160;&#160;&#160;&#160;注意，当（$h_{θ}(x^{(i)}) - y^{(i)}$）是一个标量（单个数字）时，$x^{(i)}$是一个向量。为了最后一步求导，我们让$β_i = (h_θ(x^{(i)}) - y^{(i)}$并观察：
 <center><img src="https://note.youdao.com/yws/api/personal/file/WEB9b1dfe04b474b121fe7d467b850f75e5?method=download&shareKey=f1f37efb25b1804d751849602592d1a3" /></center>
 
 &#160;&#160;&#160;&#160;上面的表达式允许我们在不适用任何循环的情况下计算所有偏导数。 如果你对线性代数比较熟悉，我们建议你通过上面的矩阵乘法，因为矢量化版本执行相同的计算。 你现在应该实现等式1来计算正确的矢量化梯度。 一旦结束后，就完成了通过实现梯度来完成函数lrCostFunction.m。
@@ -96,9 +96,9 @@
 &#160;&#160;&#160;&#160;在实现了逻辑回归向量化之后，现在你将向成本函数添加正则化。回想一下，对于正则化逻辑回归，成本函数的定义是
 <center><img src="https://note.youdao.com/yws/api/personal/file/WEB6b20003cb9e8df116603b5bc3429e16b?method=download&shareKey=9ec878aea2f88c1c4983d2ceb117e8bd" /></center>
 
-&#160;&#160;&#160;&#160;注意，你不能正则化偏差项`$θ_0$`。
+&#160;&#160;&#160;&#160;注意，你不能正则化偏差项 $θ_0$。
 
-&#160;&#160;&#160;&#160;相应地，正规化的逻辑回归代价函数对于`$θ_j$`的偏导数被定义为
+&#160;&#160;&#160;&#160;相应地，正规化的逻辑回归代价函数对于$θ_j$的偏导数被定义为
 <center><img src="https://note.youdao.com/yws/api/personal/file/WEBc97d6124facf475a2494ad6e7105acff?method=download&shareKey=5fcb8bbb8e9d9e798b3a9649646dcda8" /></center>
 
 &#160;&#160;&#160;&#160;现在在lrCostFunction中修改代码以实现正则化。
